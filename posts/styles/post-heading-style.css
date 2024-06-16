@@ -1,0 +1,26 @@
+:root {
+  --post-title-font: 'Gotham Narrow Bold';
+  --post-title-font-fallback: 'Verdana';
+  --post-title-font-size: 34px;
+  --date-font: 'Gotham Narrow Book';
+  --date-font-size: 18px;
+  --author-color: #007C89
+}
+
+.post__title {
+  font-family: var(--post-title-font), var(--post-title-font-fallback);
+  font-size: var(--post-title-font-size);
+  /* border: 1px solid red; */
+}
+
+.post__date-author {
+  font-family: var(--date-font);
+  font-size: var(--date-font-size);
+  margin-bottom: 5px;
+}
+
+.post__author {
+  text-decoration: underline;
+  color: var(--author-color)
+}
+

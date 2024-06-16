@@ -1,0 +1,20 @@
+:root {
+  --section-heading-font: 'Gotham Narrow Bold';
+  --section-heading-font-fallback: 'Verdana';
+  --section-heading-font-size: 25px;
+  --paragraph-font: 'Gotham Narrow Book';
+  --paragraph-font-size: 18px;
+}
+
+.post__section-heading {
+  font-family: var(--section-heading-font), var(--section-heading-font-fallback);
+  font-size: var(--section-heading-font-size);
+  margin-bottom: 20px;
+}
+
+.post__paragraph {
+  font-family: var(--paragraph-font);
+  font-size: var(--paragraph-font-size);
+  margin-bottom: 10px;
+}
+

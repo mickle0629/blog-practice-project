@@ -1,0 +1,68 @@
+:root {
+  --title-color: #C22033;
+  --title-font: 'Gotham Narrow Bold', 'Verdana';
+  --link-color: #007C89;
+  --card-border-color: #67BAAF;
+  --description-font: 'Gotham Narrow Book', 'sans-serif';
+}
+
+* {
+  font-family: var(--description-font);
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  margin: 30px 300px 40px 300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 400px;
+  padding: 50px;
+  border: 3px solid var(--card-border-color);
+}
+
+.card:hover {
+  border: 5px solid grey;
+  
+}
+
+.card__image{
+  width: 300px;
+}
+
+.card__title {
+  font-family: var(--title-font);
+  font-size: 30px;
+}
+
+.card__description {
+  height: 60%;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-cards {
+    grid-template-columns: 100%;
+    gap: 7px;
+    margin: 15px;
+  }
+
+  .card {
+    gap: 3px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .card__title {
+    font-size: 23px;
+  }
+
+  .card__image {
+    display: none;
+  }
+}

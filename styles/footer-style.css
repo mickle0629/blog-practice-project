@@ -1,0 +1,11 @@
+.footer {
+  border-top: 4px solid rgb(0,0,0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.footer--border-red {
+  border-top: 4px solid red;
+}
